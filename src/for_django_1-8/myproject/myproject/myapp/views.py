@@ -42,7 +42,7 @@ def list(request):
 
     # fuck(request)
 
-
+    print "something enter"
     if request.method == 'POST':
         form = DocumentForm(request.POST, request.FILES)
         print "//////////////////////////////////////////"
