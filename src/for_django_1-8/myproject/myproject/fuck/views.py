@@ -33,14 +33,14 @@ from myproject.myapp.forms import DocumentForm
 
 def fuck(request):
     print "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
-    print request.uploaded_file
+    # print request.uploaded_file
 
     if request.method == 'POST':
         form = DocumentForm(request.POST, request.FILES)
         print "//////////////////////////////////////////"
         # print request
         # print form
-            
+
 
         print "//////////////////////////////////////////"
 
@@ -64,7 +64,3 @@ def fuck(request):
         {'documents': documents, 'form': form},
         context_instance=RequestContext(request)
     )
-
-
-
-
