@@ -13,16 +13,16 @@ from myproject.myapp.forms import DocumentForm
 #     with open('some/file/name.txt', 'wb+') as destination:
 #         for chunk in f.chunks():
 #             destination.write(chunk)
-
+#
 # def upload_file(request):
-    # if request.method == 'POST':
-    #     form = UploadFileForm(request.POST, request.FILES)
-    #     if form.is_valid():
-    #         handle_uploaded_file(request.FILES['file'])
-    #         return HttpResponseRedirect('/success/url/')
-    # else:
-    #     form = UploadFileForm()
-    # return render_to_response('upload.html', {'form': form})
+#     if request.method == 'POST':
+#         form = UploadFileForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             handle_uploaded_file(request.FILES['file'])
+#             return HttpResponseRedirect('/success/url/')
+#     else:
+#         form = UploadFileForm()
+#     return render_to_response('upload.html', {'form': form})
 
 
 
@@ -48,7 +48,7 @@ def list(request):
         print "//////////////////////////////////////////"
         # print request
         # print form
-            
+
 
         print "//////////////////////////////////////////"
 
@@ -59,7 +59,7 @@ def list(request):
             # logger.debug(request.POST)
 
             # Redirect to the document list after POST
-            return HttpResponseRedirect(reverse('myproject.myapp.views.list_fuck'))
+            return HttpResponseRedirect(reverse('myproject.myapp.views.list'))
     else:
         form = DocumentForm()  # A empty, unbound form
 
