@@ -4,6 +4,7 @@ from . import views
 
 urlpatterns = patterns('myproject.myapp.views',
     url(r'^list/$', 'list', name='list'),
+    #url(r'^test/$','test',name='test'),
     # url(r'^fuck/$','fuck', name='fuck'),
 )
 
