@@ -2,7 +2,9 @@
 from django.conf.urls import patterns, url
 from . import views
 
+from django.views.decorators.csrf import csrf_exempt
+
 urlpatterns = patterns('myproject.fuck.views',
-    url(r'^fuck/$', 'fuck', name='fuck'),
+    url(r'^fuck/$', 'csrf_exempt(fuck)', name='fuck'),
 
 )
