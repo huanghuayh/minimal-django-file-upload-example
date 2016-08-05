@@ -52,7 +52,7 @@ def fuck(request):
             # Redirect to the document list after POST
             return HttpResponseRedirect(reverse('myproject.myapp.views.list'))
 
-            )
+            
     else:
         form = DocumentForm()  # A empty, unbound form
 
