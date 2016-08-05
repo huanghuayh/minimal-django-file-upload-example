@@ -30,7 +30,7 @@ from myproject.myapp.forms import DocumentForm
 
 
 
-# @csrf_exempt
+@csrf_exempt
 def fuck(request):
     print "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
     # print request.uploaded_file
