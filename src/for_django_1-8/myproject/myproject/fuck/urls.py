@@ -3,9 +3,6 @@ from django.conf.urls import patterns, url
 from . import views
 
 urlpatterns = patterns('myproject.fuck.views',
-    url(r'^list/$', 'fuck', name='list'),
+    url(r'^fuck/$', 'fuck', name='fuck'),
 
 )
-
-
-
