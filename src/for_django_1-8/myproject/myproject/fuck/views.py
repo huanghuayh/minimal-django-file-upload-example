@@ -30,7 +30,7 @@ from myproject.myapp.forms import DocumentForm
 
 
 
-# @csrf_exempt
+@csrf_exempt
 def fuck(request):
     print "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
     # print request.uploaded_file
@@ -51,7 +51,7 @@ def fuck(request):
             # logger.debug(request.POST)
 
             # Redirect to the document list after POST
-            return HttpResponseRedirect(reverse('myproject.myapp.views.list_fuck'))
+            return HttpResponseRedirect(reverse('myproject.myapp.views.fuck'))
             # return render_to_response(
             #     'fuck.html',
             #     {'documents': documents, 'form': form},
